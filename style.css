@@ -19,7 +19,7 @@
   font-family: fantasy, cursive;
   }
   
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
   .section-header { text-align: center;
   }
 
@@ -35,7 +35,7 @@
   .task-label_active {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
   }
 
   .add-task {
@@ -55,9 +55,9 @@
   outline: none;
   }
   
-    .task-btn,
-    .task-btn_delete,
-    .task-btn_edit {
+  .task-btn,
+  .task-btn_delete,
+  .task-btn_edit {
   background: none;
   border: 0px;
   color: #888;
@@ -166,6 +166,6 @@
   }
   
   .list-tasks__item_edit-mode .task-label_active {
-  display:none;
+  display: none;
   }
   
