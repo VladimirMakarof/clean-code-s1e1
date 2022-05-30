@@ -36,6 +36,10 @@ var createNewTaskElement = function (taskString) {
   label.className = 'task-label_active';
 
   //Each elements, needs appending
+
+  listItem.className = 'list-tasks__item';
+  deleteButtonImg.className = "task-btn__img";
+
   checkBox.type = "checkbox";
   editInput.type = "text";
   editInput.className = "task-input_active";
@@ -85,7 +89,7 @@ var editTask = function () {
   var editInput = listItem.querySelector('input[type=text]');
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".task-btn_edit");
-  var containsClass=listItem.classList.contains("list-tasks__item_edit-mode");
+  var containsClass = listItem.classList.contains("list-tasks__item_edit-mode");
   //If class of the parent is .edit-mode
   if (containsClass) {
 
